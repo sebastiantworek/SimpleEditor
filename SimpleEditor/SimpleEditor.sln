@@ -3,17 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28809.33
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel\DataModel.csproj", "{58D3DACE-C048-425E-B140-0F58457EA674}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataModel", "DataModel\DataModel.csproj", "{58D3DACE-C048-425E-B140-0F58457EA674}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingEngine", "DrawingEngine\DrawingEngine.csproj", "{DE46CFB2-A187-4752-A0A0-6661EE203178}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrawingEngine", "DrawingEngine\DrawingEngine.csproj", "{DE46CFB2-A187-4752-A0A0-6661EE203178}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDIPlusGraphicsWrapper", "DrawingEngineGDIPlus\GDIPlusGraphicsWrapper.csproj", "{171339C9-D7E6-4EF0-85F8-7857EB73D9D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GDIPlusGraphicsWrapper", "GDIPlusGraphicsWrapper\GDIPlusGraphicsWrapper.csproj", "{171339C9-D7E6-4EF0-85F8-7857EB73D9D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{A5AD01DD-B9DC-42EE-8D13-BE4AE66C80A3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{F5F9531D-C559-45DF-9E10-139EAF70ADFE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{AA8DF92F-A350-4D12-B01D-D967C2CF9638}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "Utils\Utils.csproj", "{A5AD01DD-B9DC-42EE-8D13-BE4AE66C80A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +33,6 @@ Global
 		{A5AD01DD-B9DC-42EE-8D13-BE4AE66C80A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5AD01DD-B9DC-42EE-8D13-BE4AE66C80A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5AD01DD-B9DC-42EE-8D13-BE4AE66C80A3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F5F9531D-C559-45DF-9E10-139EAF70ADFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F5F9531D-C559-45DF-9E10-139EAF70ADFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F5F9531D-C559-45DF-9E10-139EAF70ADFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F5F9531D-C559-45DF-9E10-139EAF70ADFE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA8DF92F-A350-4D12-B01D-D967C2CF9638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA8DF92F-A350-4D12-B01D-D967C2CF9638}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA8DF92F-A350-4D12-B01D-D967C2CF9638}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA8DF92F-A350-4D12-B01D-D967C2CF9638}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
