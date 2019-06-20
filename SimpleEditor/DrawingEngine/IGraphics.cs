@@ -11,5 +11,9 @@ namespace DrawingEngine
         void DrawLine(PointF a, PointF b, Color color, LineStyle lineStyle);
 
         void DrawCircle(PointF center, float radius, Color color, LineStyle lineStyle);
+
+        void ScaleTransform(float angle);
+
+        void MoveTransfrom(float x, float y);
     }
 }

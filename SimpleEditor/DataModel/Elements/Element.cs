@@ -10,7 +10,7 @@ namespace DataModel.Elements
         public Color Color { get; set; }
         public LineStyle LineStyle { get; set; }
 
-        public ulong ID { get; set; }
+        public ulong ID { get; }
 
         public Element()
         {

@@ -6,13 +6,28 @@ namespace DrawingEngine
 {
     public class DrawingEngine
     {
+        #region Members
+
         private Dictionary<ulong, IDrawable> _primitives = new Dictionary<ulong, IDrawable>();
-        private readonly IGraphics _graphics;
+        public IGraphics Graphics { get; set; }
+
+        #endregion
+
+        #region Constructors
+
+        public DrawingEngine() : this(null)
+        {
+
+        }
 
         public DrawingEngine(IGraphics graphics)
         {
-            _graphics = graphics;
+            Graphics = graphics;
         }
+
+        #endregion
+
+        #region Methods
 
         public void AddPrimitive(IDrawable drawable)
         {
@@ -34,11 +49,16 @@ namespace DrawingEngine
 
         public void Draw()
         {
+            if (Graphics == null)
+                return;
+
             //TODO add transformation
             foreach(var kvp in _primitives)
             {
-                kvp.Value.Draw(_graphics);
+                kvp.Value.Draw(Graphics);
             }
         }
+
+        #endregion
     }
 }
