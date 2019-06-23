@@ -57,6 +57,7 @@
             this.Controls.Add(this._toolStrip);
             this.Name = "MainWindow";
             this.Text = "MainWindow";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

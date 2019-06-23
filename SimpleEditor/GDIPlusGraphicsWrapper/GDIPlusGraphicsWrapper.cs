@@ -3,6 +3,7 @@ using DrawingEngine.Attributes;
 using GDIPlusGraphicsWrapper;
 using System;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 
 namespace GDIPlusGraphicsWrapper
 {
@@ -40,12 +41,17 @@ namespace GDIPlusGraphicsWrapper
 
         public void ScaleTransform(float scale)
         {
-            Graphics.ScaleTransform(scale, scale);
+            Graphics.ScaleTransform(scale, scale, MatrixOrder.Append);
         }
 
-        public void MoveTransfrom(float dx, float dy)
+        public void MoveTransform(float dx, float dy)
         {
-            Graphics.TranslateTransform(dx, dy);
+            Graphics.TranslateTransform(dx, dy, MatrixOrder.Append);
+        }
+
+        public void ResetTransform()
+        {
+            Graphics.ResetTransform();
         }
     }
 }

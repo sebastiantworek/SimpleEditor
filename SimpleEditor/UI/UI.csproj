@@ -88,10 +88,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataModel\DataModel.csproj">
-      <Project>{58d3dace-c048-425e-b140-0f58457ea674}</Project>
-      <Name>DataModel</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DrawingEngine\DrawingEngine.csproj">
       <Project>{de46cfb2-a187-4752-a0a0-6661ee203178}</Project>
       <Name>DrawingEngine</Name>

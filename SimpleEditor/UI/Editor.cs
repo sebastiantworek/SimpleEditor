@@ -6,11 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DrawingEngine.Primitives;
 
 namespace UI
 {
     public class Editor : Panel
     {
+        public const float ScrollStep = 0.2f;
+
         protected  GDIGraphicsWrapper _graphicsWrapper;
 
         protected DrawingEngine.DrawingEngine _drawingEngine;
@@ -29,6 +32,13 @@ namespace UI
             _drawingEngine.Draw();
         }
 
+        protected override void OnMouseWheel(MouseEventArgs e)
+        {
+            base.OnMouseWheel(e);
+            _drawingEngine.Zoom(e.Delta>0 ? 1f+ ScrollStep : 1f- ScrollStep);
+            Invalidate();
+        }
+
         private void RefreshGraphics(PaintEventArgs e)
         {
             if (_graphicsWrapper == null)
@@ -36,13 +46,12 @@ namespace UI
             else
                 _graphicsWrapper.Graphics = e.Graphics;
 
-            if (_drawingEngine.Graphics == null)
-                _drawingEngine.Graphics = _graphicsWrapper;
+            _drawingEngine.Graphics = _graphicsWrapper;
         }
 
-        public void AddElement(Element element)
+        public void AddElement(Primitive primitive)
         {
-            _drawingEngine.AddPrimitive(element);
+            _drawingEngine.Add(primitive);
         }
 
         protected override void Dispose(bool disposing)
